@@ -1,0 +1,12 @@
+@use '../core/variables' as *;
+
+
+.footer--top {
+    background-color: #aaa;
+    height: 300px;
+}
+
+.footer--bottom {
+    background-color: #555;
+    height: 50px;
+}
