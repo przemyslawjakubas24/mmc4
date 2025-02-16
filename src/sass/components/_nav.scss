@@ -1,0 +1,85 @@
+@use '../core/variables' as *;
+
+.nav {
+	background-color: $light-color;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	width: 100%;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $dark-color;
+		.hamburger {
+			display: none;
+			font-size: 4rem;
+			background: none;
+			border: none;
+			color: $dark-color;
+			cursor: pointer;
+		}
+		.nav__links {
+			display: flex;
+			gap: 4rem;
+			.close-menu {
+				display: none;
+				position: absolute;
+				top: 0.5rem;
+				right: 2rem;
+				background: none;
+				border: none;
+				font-size: 5rem;
+				color: $dark-color;
+				cursor: pointer;
+			}
+			.nav__links__item {
+				.nav__item {
+					color: $dark-color;
+					font-size: 2rem;
+					display: block;
+					padding: 2rem;
+					transition: background-color 0.2s, color 0.2s;
+					&:hover, &.active {
+						background-color: $dark-color;
+						color: $light-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.nav {
+		.container {
+			.hamburger {
+				display: block;
+			}
+			.nav__links {
+				position: fixed;
+				top: 0;
+				right: -100%;
+				z-index: 10;
+				background: $light-color;
+				height: 100vh;
+				width: $menu-width;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				transition: right $transition-speed ease;
+
+				&.open-menu {
+					right: 0;
+
+					.close-menu {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

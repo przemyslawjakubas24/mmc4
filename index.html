@@ -4,29 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.min.css">
-    <title>Website25</title>
+    <title>Forest</title>
 </head>
 
 <body>
 
     <nav class="nav">
-    <ul>
-        <li>Link nr 1</li>
-        <li>Link nr 2</li>
-        <li>Link nr 3</li>
-    </ul>
+    <div class="container">
+        <a class="logo">
+    <img src="./dist/img/logo.svg" alt="Logo">
+    <p>Forest</p>
+</a>
+        <button class="hamburger" aria-label="Otwórz menu">
+            &#9776;
+        </button>
+        <ul class="nav__links">
+            <button class="close-menu" aria-label="Zamknij menu">&times;</button>
+            <li class="nav__links__item"><a href="#home" class="nav__item active">Home</a></li>
+            <li class="nav__links__item"><a href="#o_nas" class="nav__item">O nas</a></li>
+            <li class="nav__links__item"><a href="#oferta" class="nav__item">Oferta</a></li>
+            <li class="nav__links__item"><a href="#kontakt" class="nav__item">Kontakt</a></li>
+        </ul>
+    </div>
 </nav>
 
-    <p>Strona główna!</p>
-    <a href="page.html">Podstrona</a>
+    <!-- <p>Strona główna!</p> -->
+    <!-- <a href="page.html">Podstrona</a> -->
 
-    <footer class="footer">
+    <header class="page-item header" id="home"><h2>Header</h2></header>
+    <main class="main">
+        <section class="page-item section section1" id="o_nas">
+            <h2>O nas</h2>
+        </section>
+        <section class="page-item section section2" id="oferta">
+            <h2>Oferta</h2>
+        </section>
+        <section class="page-item section section3" id="kontakt">
+            <h2>Kontakt</h2>
+        </section>
+    </main>
+    
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+    <!-- <footer class="footer">
     <p>Footer</p>
-</footer>
+</footer> -->
 
-
-    <script src="./dist/js/main.min.js"></script>
+    <script src="./dist/js/script.min.js"></script>
 
 </body>
 

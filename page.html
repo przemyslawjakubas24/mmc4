@@ -11,19 +11,30 @@
 <body>
 
     <nav class="nav">
-    <ul>
-        <li>Link nr 1</li>
-        <li>Link nr 2</li>
-        <li>Link nr 3</li>
-    </ul>
+    <div class="container">
+        <a class="logo">
+    <img src="./dist/img/logo.svg" alt="Logo">
+    <p>Forest</p>
+</a>
+        <button class="hamburger" aria-label="Otwórz menu">
+            &#9776;
+        </button>
+        <ul class="nav__links">
+            <button class="close-menu" aria-label="Zamknij menu">&times;</button>
+            <li class="nav__links__item"><a href="#home" class="nav__item active">Home</a></li>
+            <li class="nav__links__item"><a href="#o_nas" class="nav__item">O nas</a></li>
+            <li class="nav__links__item"><a href="#oferta" class="nav__item">Oferta</a></li>
+            <li class="nav__links__item"><a href="#kontakt" class="nav__item">Kontakt</a></li>
+        </ul>
+    </div>
 </nav>
 
     <p>Podstrona</p>
     <a href="index.html">Strona główna</a>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
     <p>Footer</p>
-</footer>
+</footer> -->
 
 
     <script src="./dist/js/main.min.js"></script>

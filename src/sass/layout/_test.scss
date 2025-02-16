@@ -1,0 +1,31 @@
+.header {
+	background-color: rgb(80, 131, 227);
+}
+
+.page-item {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 7em;
+	font-weight: bolder;
+	padding-bottom: 70px;
+	text-transform: uppercase;
+}
+
+footer {
+	height: 400px;
+	padding: 4rem;
+	text-align: center;
+	background-color: #333;
+}
+
+.section1 {
+	background-color: rgb(187, 187, 187);
+}
+.section2 {
+	background-color: rgb(156, 156, 156);
+}
+.section3 {
+	background-color: rgb(96, 96, 96);
+}
